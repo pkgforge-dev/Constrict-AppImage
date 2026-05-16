@@ -1,10 +1,10 @@
 <div align="center">
 
-# constrict-anylinux 🐧
+# Constrict-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/TheRealYasri/Constrict-AnyLinux/total?logo=github&label=GitHub%20Downloads)](https://github.com/TheRealYasri/Constrict-AnyLinux/releases/latest)
-[![CI Build Status](https://github.com/TheRealYasri/Constrict-AnyLinux/actions/workflows/appimage.yml/badge.svg)](https://github.com/TheRealYasri/Constrict-AnyLinux/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/TheRealYasri/Constrict-AnyLinux)](https://github.com/TheRealYasri/Constrict-AnyLinux/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Constrict-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Constrict-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/Constrict-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Constrict-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Constrict-AppImage)](https://github.com/pkgforge-dev/Constrict-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://gitlab.gnome.org/World/Constrict/-/raw/main/data/icons/hicolor/scalable/apps/io.github.wartybix.Constrict.svg?ref_type=heads" />
@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/TheRealYasri/Constrict-AnyLinux/releases/latest) | [Click here](https://gitlab.gnome.org/World/Constrict) |
+| [Click here](https://github.com/pkgforge-dev/Constrict-AppImage/releases/latest) | [Click here](https://gitlab.gnome.org/World/Constrict) |
 
 </div>
 
