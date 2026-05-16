@@ -4,13 +4,12 @@ set -eu
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-sudo pacman -Syy --noconfirm archlinux-keyring
 #Build
-sudo pacman -S --noconfirm --needed git meson blueprint-compiler
+pacman -S --noconfirm --needed meson blueprint-compiler
 #Needed
-sudo pacman -S --noconfirm --needed python python-gobject python-cairo gtk4 glycin-gtk4 libadwaita ffmpeg 
+pacman -S --noconfirm --needed python python-gobject python-cairo glycin-gtk4 libadwaita ffmpeg 
 #Optional
-sudo pacman -S --noconfirm --needed libva-utils
+pacman -S --noconfirm --needed libva-utils
     
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -18,12 +17,15 @@ get-debloated-pkgs --add-common --prefer-nano
 
 echo "Installing constrict from source packages..."
 echo "---------------------------------------------------------------"
-git clone https://gitlab.gnome.org/World/Constrict.git source
-cd source
-meson setup build --prefix=/usr
-meson compile -C build
-sudo meson install -C build
-cd ..
+git clone https://gitlab.gnome.org/World/Constrict.git && (
+	cd ./Constrict
+	TAG=$(git tag --sort=-v:refname | grep -vi 'rc\|alpha' | head -1)
+	git checkout "$TAG"
+	echo "$TAG" > ~/version
+	meson setup build --prefix=/usr
+	meson compile -C build
+	meson install -C build
+)
 
 # Comment this out if you need an AUR package
 #make-aur-package PACKAGENAME
