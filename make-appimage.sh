@@ -9,6 +9,8 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/io.github.wartybix.Constrict.
 export DESKTOP=/usr/share/applications/io.github.wartybix.Constrict.desktop
 export PATH_MAPPING='/usr/share/constrict:${SHARUN_DIR}/share/constrict'
 export DEPLOY_PYTHON=1
+export STARTUPWMCLASS=io.github.wartybix.Constrict # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
+export GTK_CLASS_FIX=1
 
 # Deploy dependencies
 quick-sharun \
