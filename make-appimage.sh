@@ -2,9 +2,8 @@
 set -eu
 
 # Setup
-VERSION=$(grep -m 1 "version:" source/meson.build | cut -d"'" -f2)
-export VERSION
-export ARCH=$(uname -m)
+ARCH=$(uname -m)
+export ARCH
 export OUTPATH=./dist
 export ICON=/usr/share/icons/hicolor/scalable/apps/io.github.wartybix.Constrict.svg
 export DESKTOP=/usr/share/applications/io.github.wartybix.Constrict.desktop
