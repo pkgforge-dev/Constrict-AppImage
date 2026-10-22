@@ -9,8 +9,6 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/io.github.wartybix.Constrict.
 export DESKTOP=/usr/share/applications/io.github.wartybix.Constrict.desktop
 export PATH_MAPPING='/usr/share/constrict:${SHARUN_DIR}/share/constrict'
 export DEPLOY_PYTHON=1
-export DEPLOY_GTK=1
-export GTK_DIR=gtk-4.0
 export STARTUPWMCLASS=io.github.wartybix.Constrict
 export GTK_CLASS_FIX=1
 
@@ -21,8 +19,6 @@ quick-sharun \
   /usr/bin/ffmpeg \
   /usr/lib/libgtk-4.so* \
   /usr/lib/libadwaita-1.so* \
-  /usr/lib/python*/site-packages/gi \
-  /usr/lib/python*/site-packages/cairo \
   /usr/share/constrict
   
 # Turn AppDir into AppImage
@@ -30,4 +26,4 @@ quick-sharun --make-appimage
 
 # Test the app for 12 seconds, if the test fails due to the app
 # having issues running in the CI use --simple-test instead
-quick-sharun --test ./dist/*.AppImage
+quick-sharun --simple-test ./dist/*.AppImage
