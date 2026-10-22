@@ -7,7 +7,7 @@ echo "---------------------------------------------------------------"
 #Build
 pacman -S --noconfirm --needed meson blueprint-compiler
 #Needed
-pacman -S --noconfirm --needed python python-gobject python-cairo glycin-gtk4 libadwaita ffmpeg pipewire-jack
+pacman -S --noconfirm --needed python python-gobject python-cairo glycin glycin-gtk4 libadwaita ffmpeg pipewire-jack
 #Optional
 pacman -S --noconfirm --needed libva-utils
     
